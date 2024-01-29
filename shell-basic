@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# this is sample basic shell script file
+
+# Creating a directory
+mkdir onefolder
+
+# Change Directory
+cd onefolder 
+
+# Creating a file 
+touch file1.sh
+
+# adding data in the file
+echo "hey this is working perfectly fine" > file1.sh
+
+# print file
+
+cat file1.sh
