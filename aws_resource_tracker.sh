@@ -22,7 +22,7 @@ set -x  # debug mode
 
 aws s3 ls 
 
-# List EC2 instances
+##  List EC2 instances
 
 aws ec2 describe-instances 
 
