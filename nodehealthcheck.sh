@@ -8,8 +8,9 @@
 
 # this script is for check the health of node 
 
-set -x      #debug mode -- it is for showing the commmands to user when script execute | each command their execution | for better understanding of data when script run 
-
+set -x   #debug mode -- it is for showing the commmands to user when script execute | each command their execution | for better understanding of data when script run 
+set -e   #exit the script when there is an error
+set -o pipefail # the above command set -e passed when there is last argument run successfully but the first argument before pipe has an issue then still above command will run but for avoid this we use this set -o.
 # sometimes you don't want to showcase the command with execution then you can comment to this "# set -x" so it will hide
 
 df -h # check the disk
